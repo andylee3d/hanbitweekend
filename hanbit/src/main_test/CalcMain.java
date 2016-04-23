@@ -2,7 +2,7 @@ package main_test;
 
 import java.util.Scanner;
 
-import grade.Grade;
+import grade.GradeBean;
 import syntax.Calculator;
 
 
@@ -35,9 +35,8 @@ public class CalcMain {
 		System.out.println(result);
 		
 	 System.out.println("총점을 구하시오");
-		Grade grade = new Grade();
-		int total = grade.getTotal(30, 30,30);
-				System.out.println(total);
+		GradeBean grade = new GradeBean();
+		
 				
 				System.out.println("홍길동의 총점은 "+0+"이고 ,평균은 "+0+"이다");
 				
