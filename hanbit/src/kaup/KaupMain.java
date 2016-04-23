@@ -11,10 +11,11 @@ public class KaupMain {
 		int height = 0, weight = 0;
 		while (true) {
 			System.out.println("=== 카우프 지수 구하기 프로그램=====");
-			System.out.println("[메뉴]1.계속"2.종료");
+			System.out.println("[메뉴]1.계속2.종료");
+			int key = scanner.nextInt();
 			switch (key) {
 			case 1:break;
-			case 2:break; System.out.println("시스템 종료입니다");
+			case 2:break; 
 
 			default:System.out.println("1,2번만 선택이 가능합니다");
 				break;
