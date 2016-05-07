@@ -3,7 +3,7 @@ package grade;
 public class GradeBean {
 	// === 멤버필드영역(스코프) ===
 	private int kor,eng,math,java; // 인스턴스 변수는 초기화를 하지 않는다
-	private String name;
+	private String name, id;
 	
 	public void setJava(int java){
 		this.java = java;
@@ -35,8 +35,21 @@ public class GradeBean {
 	}
 	public int getMath() {
 		return math;
+		
 	}
 	// === 멤버메소드 영역(스코프) ===
+	public String getId() {
+		return id;
+	}
+	public void setId(String id) {
+		this.id = id;
+	}
+	@Override
+	public String toString() {
+		return "===="+name+ "("+id+")의성적표====\n"
+				+ "[kor=" + kor + ", eng=" + eng + ", math=" + math + ", java=" + java + "]";
+		
+	}
 	
 }
 
