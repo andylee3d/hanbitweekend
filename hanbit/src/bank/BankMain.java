@@ -65,6 +65,7 @@ public class BankMain {
 			case "0":System.out.println("*종료*"); return;
 			default: System.out.println("메뉴에 있는 번호 이력");
 				break;
+				
 			}
 		}
 	}
